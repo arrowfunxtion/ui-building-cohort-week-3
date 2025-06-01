@@ -1,0 +1,111 @@
+{
+  user: {
+    id: 1,
+    name: "Cameron Williamson",
+    greeting: "Good Morning",
+    avatar: "https://example.com/avatar/cameron.png"
+  },
+
+  vitals: {
+    heart_rate_bpm: 86,
+    hemoglobin_level: 16.6, // g/dL
+    heart_condition_score: 16.6,
+    sweating: "Good",
+    blood: "Normal"
+  },
+
+  medications: [
+    {
+      id: 1,
+      name: "Lafodine",
+      variant: "aften",
+      doses: [
+        {
+          time_of_day: "After Lunch",
+          icon: "☀️",
+          frequency_per_day: 1
+        },
+        {
+          time_of_day: "After Dinner",
+          icon: "🌙",
+          frequency_per_day: 1
+        }
+      ]
+    },
+    {
+      id: 2,
+      name: "Lafodine",
+      variant: "aften",
+      doses: [
+        {
+          time_of_day: "After Lunch",
+          icon: "☀️",
+          frequency_per_day: 1
+        },
+        {
+          time_of_day: "After Dinner",
+          icon: "🌙",
+          frequency_per_day: 1
+        }
+      ]
+    }
+  ],
+
+  patient_schedule: [
+    {
+      date: "2025-04-28",
+      activities: [
+        { time: "09:00", type: "Vitals Check" },
+        { time: "12:00", type: "Medication Reminder" },
+        { time: "18:00", type: "Evening Check" }
+      ]
+    },
+    {
+      date: "2025-04-29",
+      activities: [
+        { time: "09:00", type: "Vitals Check" },
+        { time: "12:00", type: "Medication Reminder" },
+        { time: "18:00", type: "Evening Check" }
+      ]
+    },
+    {
+      date: "2025-04-30",
+      activities: [
+        { time: "09:00", type: "Vitals Check" },
+        { time: "12:00", type: "Medication Reminder" },
+        { time: "18:00", type: "Evening Check" }
+      ]
+    },
+    {
+      date: "2025-05-01",
+      activities: [
+        { time: "10:00", type: "Therapy Session" },
+        { time: "18:00", type: "Evening Check" }
+      ]
+    },
+    {
+      date: "2025-05-02",
+      activities: [
+        { time: "09:00", type: "Vitals Check" },
+        { time: "18:00", type: "Evening Check" }
+      ]
+    }
+  ],
+
+  doctor_appointments: [
+    {
+      id: 1,
+      doctor: "Dr. Ada Wafa",
+      specialty: "Heart Specialist",
+      time: "09:00",
+      date: "2025-04-28"
+    },
+    {
+      id: 2,
+      doctor: "Dr. Sircane",
+      specialty: "Neurosurgeon",
+      time: "09:00",
+      date: "2025-04-28"
+    }
+  ]
+}
