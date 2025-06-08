@@ -1,22 +1,7 @@
 import { AppLayout } from "../../components/layout";
 import { UserTopMenus } from "@/components/pages/dashboard/UserTopMenus";
 import { UserGreeting } from "@/components/pages/dashboard/UserGreeting";
-import { useUserVital } from "@/hooks/userUserVital";
-
-const UserVital = () => {
-  const vital = useUserVital();
-  if (vital.status === "error") {
-    return <div>Terjadi kesalahan saat mengambil data vital</div>;
-  }
-  if (vital.status === "loading") {
-    return <div>Memuat data vital ...</div>;
-  }
-  return (
-    <div>
-      <div>{vital.data.heart_rate_bpm} BPM</div>
-    </div>
-  );
-};
+import { UserVital } from "@/components/UserVital";
 
 export default function DashboardPage() {
   const fullName = "Muhammad Azamuddin";
@@ -28,6 +13,7 @@ export default function DashboardPage() {
             <UserGreeting name={fullName} />
             <UserTopMenus name={fullName} />
           </div>
+          <UserVital />
         </div>
         <div id="right-content" className="w-[456px] bg-white">
           Konten kanan
